@@ -13,7 +13,15 @@ class CategoriesTableSeeder extends Seeder
     public function run()
     {
         DB::table('categories')->insert([
-            'name' => 'Meus contatos'
+            [
+                'name' => 'Meus contatos',
+            ],
+            [
+                'name' => 'Família',
+            ],
+            [
+                'name' => 'Trabalho',
+            ]
         ]);
     }
 }
