@@ -47,9 +47,12 @@ fieldset.address {
     margin: 0 0 20px 0;
     padding: 20px;
     border: 1px solid #ccc;
+    position: relative;
 }
 .btn-address-remove {
     border-radius: 20px;
+    position: absolute;
+    right: -12px;
 }
 .error {
     border-color: #dd2727;
@@ -59,4 +62,14 @@ fieldset.address {
 }
 .dataTables_filter {
     display: none !important;
+}
+.table-custom {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    tr:not(:first-child) {
+        &:hover {
+            background: #eee;
+        }
+    }
 }

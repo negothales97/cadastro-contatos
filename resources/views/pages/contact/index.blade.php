@@ -6,10 +6,11 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Lista de contatos</h4>
+                        <h4 class="card-title">Meus contatos</h4>
                         <div class="card-tools" id="padded">
                             <a href="{{ route('contact.create') }}" class="btn btn-success">Adicionar</a>
-                            <input name="search" id="input-search" list="contact-list" class="form-control" />
+                            <input name="search" id="input-search" placeholder="Pesquisar.." list="contact-list"
+                                class="form-control" />
                             <datalist id="contact-list">
                                 <option value="1">1</option>
                             </datalist>
@@ -17,12 +18,12 @@
                     </div>
 
                     <div class="card-body">
-                        <table id="table-contact" class="table table-striped table-bordered">
+                        <table id="table-contact" class="table table-custom">
                             <thead>
                                 <tr>
                                     <th>Nome</th>
                                     <th>Categoria</th>
-                                    <th>Ações</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>

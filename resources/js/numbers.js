@@ -7,7 +7,7 @@ $(document).on('click', '.btn-more-number', function () {
         `
     <div class="group">
         <span>
-            <input type="text" class="form-control" name="numbers[]" required />
+            <input type="text" data-inputmask="'mask': '(99) 99999-9999'" class="form-control input-phone" name="numbers[]" required />
         </span>
         <button class="btn btn-success btn-sm btn-more-number" type="button">
             <i class="fas fa-plus"></i>

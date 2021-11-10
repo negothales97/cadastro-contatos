@@ -11,7 +11,22 @@
  <script src="{{ asset('plugins/datatables/jquery.dataTables.js') }}"></script>
  <script src="{{ asset('/plugins/datatables-bs4/js/dataTables.bootstrap4.js') }}"></script>
  <script src="https://cdn.datatables.net/rowgroup/1.1.3/js/dataTables.rowGroup.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
  <script src="{{ asset('js/app.js') }}" defer></script>
 
  @include('includes.alerts')
  @yield('scripts')
+
+ <script type="text/javascript">
+     $(document).ready(function() {
+         //  $(":input").inputmask();
+         //  or
+         Inputmask().mask(document.querySelectorAll("input"));
+     });
+     $(document).on('focus', '.input-cep', function() {
+         Inputmask().mask(document.querySelectorAll("input"));
+     });
+     $(document).on('focus', '.input-phone', function() {
+         Inputmask().mask(document.querySelectorAll("input"));
+     });
+ </script>

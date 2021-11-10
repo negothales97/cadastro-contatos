@@ -5,14 +5,14 @@ $(document).on('click', '.btn-add-address', function () {
                 <button class="btn btn-link btn-add-address" type="button">Adicionar outro
                     endereço</button>
                     <button type="button" class="btn btn-danger btn-sm btn-address-remove">
-                        <i class="fas fa-trash"></i>
+                        <i class="fas fa-times"></i>
                     </button>
             </legend>
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>CEP</label>
-                        <input type="text" name="zip_code[]" class="form-control zip_code" required />
+                        <input type="text" name="zip_code[]" data-inputmask="'mask': '99999-999'" class="form-control input-cep zip_code" required />
                     </div>
                 </div>
             </div>

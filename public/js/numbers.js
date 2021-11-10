@@ -98,7 +98,7 @@ $(document).on('click', '.btn-less-number', function () {
   inputGroup.remove();
 });
 $(document).on('click', '.btn-more-number', function () {
-  var input = "\n    <div class=\"group\">\n        <span>\n            <input type=\"text\" class=\"form-control\" name=\"numbers[]\" required />\n        </span>\n        <button class=\"btn btn-success btn-sm btn-more-number\" type=\"button\">\n            <i class=\"fas fa-plus\"></i>\n        </button>\n        <button class=\"btn btn-danger btn-sm btn-less-number\" type=\"button\">\n            <i class=\"fas fa-trash\"></i>\n        </button>\n    </div>";
+  var input = "\n    <div class=\"group\">\n        <span>\n            <input type=\"text\" data-inputmask=\"'mask': '(99) 99999-9999'\" class=\"form-control input-phone\" name=\"numbers[]\" required />\n        </span>\n        <button class=\"btn btn-success btn-sm btn-more-number\" type=\"button\">\n            <i class=\"fas fa-plus\"></i>\n        </button>\n        <button class=\"btn btn-danger btn-sm btn-less-number\" type=\"button\">\n            <i class=\"fas fa-trash\"></i>\n        </button>\n    </div>";
   $('#list-numbers').append(input);
 });
 

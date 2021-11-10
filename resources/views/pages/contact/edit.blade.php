@@ -56,8 +56,8 @@
                                             @foreach ($contact->phoneNumbers as $key => $phoneNumber)
                                                 <div class="group">
                                                     <span>
-                                                        <input type="text"
-                                                            class="form-control @error('numbers.*') error @enderror"
+                                                        <input type="text" data-inputmask="'mask': '(99) 99999-9999'"
+                                                            class="form-control input-phone @error('numbers.*') error @enderror"
                                                             value="{{ old('numbers.0', $phoneNumber->number) }}"
                                                             name="numbers[]" required />
                                                     </span>
@@ -100,8 +100,9 @@
                                                 <div class="form-group">
                                                     <label>CEP</label>
                                                     <input type="text" name="zip_code[]"
+                                                        data-inputmask="'mask': '99999-999'"
                                                         value="{{ old('zip_code.0', $address->zip_code) ?? '' }}"
-                                                        class="form-control @error('zip_code.*') error @enderror zip_code"
+                                                        class="form-control input-cep @error('zip_code.*') error @enderror zip_code"
                                                         required />
                                                     @error('zip_code.*')
                                                         <div class="error-message">{{ $message }}.</div>
