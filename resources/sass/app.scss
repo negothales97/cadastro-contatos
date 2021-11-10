@@ -1,0 +1,62 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    .card-title {
+        margin: 0;
+        align-self: center;
+    }
+}
+.card-tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+        margin-left: 20px;
+    }
+}
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    span {
+        width: 250px;
+        margin-right: 50px;
+    }
+    button {
+        border-radius: 20px;
+        margin: 5px;
+    }
+}
+#category-label,
+.address legend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+fieldset.address {
+    margin: 0 0 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.btn-address-remove {
+    border-radius: 20px;
+}
+.error {
+    border-color: #dd2727;
+}
+.error-message {
+    color: #dd2727;
+}
+.dataTables_filter {
+    display: none !important;
+}
